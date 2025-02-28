@@ -46,7 +46,8 @@ const CourseDetails = () => {
         <h1 className='md:text-course-details-heading-large text-course-details-heading-small
          font-semibold text-gray-800'> {courseData.courseTitle}</h1>
         <p className='pt-4 md:text-base text-sm'
-         dangerouslySetInnerHTML={{__html: courseData.courseDescription.slice(0,200) }}></p>
+         dangerouslySetInnerHTML={{__html: courseData.courseDescription.slice(0,200) }}>
+        </p>
 
          {/* review and ratings */}
          <div className='flex items-center space-x-2 pt-3 pb-1 text-sm'>
@@ -105,6 +106,14 @@ const CourseDetails = () => {
               ))}
             </div>
           </div>
+
+          <div className='py-20 text-sm md:text-default'>
+            <h3 className='text-xl font-semibold text-gray-800'>Course Description</h3>
+            <p className='pt-3 rich-text'
+             dangerouslySetInnerHTML={{__html: courseData.courseDescription }}>
+            </p>
+          </div>
+
       </div>
 
       {/* right column */}
