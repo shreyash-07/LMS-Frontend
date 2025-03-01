@@ -115,7 +115,7 @@ const CourseDetails = () => {
 
                 </div>
               ))}
-            </div>
+              </div>
           </div>
 
           <div className='py-20 text-sm md:text-default'>
