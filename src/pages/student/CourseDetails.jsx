@@ -130,13 +130,13 @@ const CourseDetails = () => {
       {/* right column */}
       <div className='max-w-course-card z-10 shadow-custom-card rounded-t md:rounded-none overflow-hidden bg-white
       min-w-[300px] sm:min-w-[420px]'>
-        
+
         {
-              playerData ? 
-              <YouTube videoId={playerData.videoId} opts={{playerVars:{autoplay:1 }}}
-              iframeClassName="w-full aspect-video" />
-              :   <img src={courseData.courseThumbnail} alt="" />
-            }
+          playerData ? 
+          <YouTube videoId={playerData.videoId} opts={{playerVars:{autoplay:1 }}}
+          iframeClassName="w-full aspect-video" />
+          :  <img src={courseData.courseThumbnail} alt="" />
+        }
        
         <div className='p-5'>
           <div className='flex items-center gap-2'>
