@@ -6,7 +6,7 @@ const MyCourses = () => {
 
   const {currency, allCourses} = useContext(AppContext)
 
-  const [courses, setCourses] = useState([])
+  const [courses, setCourses] = useState(null)
 
   const fetchEducatorCourses = async () => {
     setCourses(allCourses)
@@ -21,7 +21,8 @@ const MyCourses = () => {
         <div className='w-full'>
         <h1 className='pb-4 text-lg font-medium'>My Courses</h1>
       
-        <div className='flex flex-col items-center max-w-4xl w-full overflow-hidden rounded-md bg-white border border-gray-500/20'> 
+        <div className='flex flex-col items-center max-w-4xl w-full overflow-hidden rounded-md bg-white border
+         border-gray-500/20'> 
           <table className='md:table-auto table-fixed w-full overflow-hidden'>
 
           <thead className='text-gray-900 border-b border-gray-500/20 text-sm text-left'>
